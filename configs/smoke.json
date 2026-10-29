@@ -1,0 +1,25 @@
+{
+  "name": "SMOKE_TEST_NOT_SCIENTIFIC_RESULTS",
+  "description": "Tiny synthetic plumbing test; never present as experimental evidence",
+  "synthetic_fashion": true,
+  "tasks": {
+    "toy": {
+      "seeds": [0], "width": 16, "batch": 16, "steps": 4,
+      "extra_steps": 2, "lr": 0.001, "warmup": 1, "ema_decay": 0.99,
+      "amp": false, "log_every": 2, "save_every": 2,
+      "pair_count": 16, "eval_batch": 16, "eval_samples": 32,
+      "trace_samples": 4, "probe_samples": 4,
+      "reference_start": 2, "reference_max": 8, "reference_rtol": 0.05,
+      "nfes": [1, 4]
+    },
+    "fashion": {
+      "seeds": [0], "width": 8, "batch": 4, "steps": 4,
+      "extra_steps": 2, "lr": 0.0002, "warmup": 1, "ema_decay": 0.99,
+      "amp": false, "log_every": 2, "save_every": 2,
+      "pair_count": 8, "eval_batch": 4, "eval_samples": 8,
+      "trace_samples": 2, "probe_samples": 2,
+      "reference_start": 2, "reference_max": 8, "reference_rtol": 0.05,
+      "nfes": [1, 4]
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "steps": 1024,
+  "nfe": 2048,
+  "doubling_rmse": 4.8081357817864046e-05,
+  "relative_rmse": 5.892060837296893e-05,
+  "converged": true,
+  "tolerance": 0.005,
+  "absolute_tolerance": 0.0001,
+  "threshold": 0.00418018171787262,
+  "check_samples": 64,
+  "cross_check": {
+    "method": "rk4",
+    "steps": 512,
+    "nfe": 2048,
+    "rmse": 1.4539406947733369e-05,
+    "relative_rmse": 1.7817107120555064e-05,
+    "passed": true
+  },
+  "required_consecutive": 2,
+  "history": [
+    {
+      "coarse_steps": 32,
+      "steps": 64,
+      "doubling_rmse": 0.013608651235699654,
+      "relative_rmse": 0.016671558847795642,
+      "threshold": 0.004181397354602814,
+      "sample_rmse_p95": 0.009155076928436756,
+      "sample_rmse_max": 0.08038145303726196,
+      "doubling_passed": false,
+      "consecutive_passes": 0,
+      "cross_check": null
+    },
+    {
+      "coarse_steps": 64,
+      "steps": 128,
+      "doubling_rmse": 0.004217087756842375,
+      "relative_rmse": 0.005167680079256128,
+      "threshold": 0.004180252349376678,
+      "sample_rmse_p95": 0.005570319015532732,
+      "sample_rmse_max": 0.01667867600917816,
+      "doubling_passed": false,
+      "consecutive_passes": 0,
+      "cross_check": null
+    },
+    {
+      "coarse_steps": 128,
+      "steps": 256,
+      "doubling_rmse": 0.00658578984439373,
+      "relative_rmse": 0.008070383629331785,
+      "threshold": 0.004180221056938172,
+      "sample_rmse_p95": 0.010849290527403355,
+      "sample_rmse_max": 0.04363028332591057,
+      "doubling_passed": false,
+      "consecutive_passes": 0,
+      "cross_check": null
+    },
+    {
+      "coarse_steps": 256,
+      "steps": 512,
+      "doubling_rmse": 0.00027695143944583833,
+      "relative_rmse": 0.0003393859349105609,
+      "threshold": 0.0041801844000816345,
+      "sample_rmse_p95": 0.0003774324432015419,
+      "sample_rmse_max": 0.001022813841700554,
+      "doubling_passed": true,
+      "consecutive_passes": 1,
+      "cross_check": null
+    },
+    {
+      "coarse_steps": 512,
+      "steps": 1024,
+      "doubling_rmse": 4.8081357817864046e-05,
+      "relative_rmse": 5.892060837296893e-05,
+      "threshold": 0.00418018171787262,
+      "sample_rmse_p95": 7.494187593692914e-05,
+      "sample_rmse_max": 0.0001260209974134341,
+      "doubling_passed": true,
+      "consecutive_passes": 2,
+      "cross_check": {
+        "method": "rk4",
+        "steps": 512,
+        "nfe": 2048,
+        "rmse": 1.4539406947733369e-05,
+        "relative_rmse": 1.7817107120555064e-05,
+        "passed": true
+      }
+    }
+  ],
+  "precision": "fp32_no_tf32",
+  "method": "heun",
+  "check_seconds": 13.569703892999314
+}

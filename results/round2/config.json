@@ -1,0 +1,76 @@
+{
+  "name": "round2_group_meeting",
+  "description": "Fresh training: 3 seeds for both tasks; strict FP32 references with consecutive doubling and RK4 checks",
+  "training_tf32": true,
+  "tasks": {
+    "toy": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "width": 128,
+      "batch": 1024,
+      "steps": 10000,
+      "extra_steps": 5000,
+      "lr": 0.001,
+      "warmup": 100,
+      "ema_decay": 0.9999,
+      "amp": false,
+      "log_every": 100,
+      "save_every": 500,
+      "pair_count": 10000,
+      "eval_batch": 256,
+      "eval_samples": 4096,
+      "trace_samples": 64,
+      "probe_samples": 256,
+      "reference_start": 32,
+      "reference_min": 128,
+      "reference_max": 1024,
+      "reference_rtol": 0.005,
+      "reference_atol": 0.0001,
+      "reference_consecutive": 2,
+      "baseline_repeats": 20,
+      "nfes": [
+        1,
+        4,
+        16,
+        64
+      ]
+    },
+    "fashion": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "width": 32,
+      "batch": 128,
+      "steps": 20000,
+      "extra_steps": 10000,
+      "lr": 0.0002,
+      "warmup": 200,
+      "ema_decay": 0.9999,
+      "amp": true,
+      "log_every": 100,
+      "save_every": 500,
+      "pair_count": 10000,
+      "eval_batch": 128,
+      "eval_samples": 512,
+      "trace_samples": 32,
+      "probe_samples": 64,
+      "reference_start": 32,
+      "reference_min": 128,
+      "reference_max": 1024,
+      "reference_rtol": 0.005,
+      "reference_atol": 0.0001,
+      "reference_consecutive": 2,
+      "nfes": [
+        1,
+        4,
+        16,
+        64
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.venv/
+.python_path
+__pycache__/
+*.py[cod]
+data/
+runs/
+*.pt
+*.pth
+*.npz
+*.tar.gz
+*.zip
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

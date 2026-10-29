@@ -1,0 +1,50 @@
+{
+  "name": "quick_group_meeting",
+  "description": "3-seed 2D mechanism experiment + 1-seed Fashion-MNIST pilot; not a benchmark reproduction",
+  "tasks": {
+    "toy": {
+      "seeds": [0, 1, 2],
+      "width": 128,
+      "batch": 1024,
+      "steps": 5000,
+      "extra_steps": 2500,
+      "lr": 0.001,
+      "warmup": 100,
+      "ema_decay": 0.9999,
+      "amp": false,
+      "log_every": 100,
+      "save_every": 500,
+      "pair_count": 10000,
+      "eval_batch": 256,
+      "eval_samples": 1024,
+      "trace_samples": 64,
+      "probe_samples": 128,
+      "reference_start": 32,
+      "reference_max": 256,
+      "reference_rtol": 0.005,
+      "nfes": [1, 4, 16, 64]
+    },
+    "fashion": {
+      "seeds": [0],
+      "width": 32,
+      "batch": 128,
+      "steps": 5000,
+      "extra_steps": 2500,
+      "lr": 0.0002,
+      "warmup": 200,
+      "ema_decay": 0.9999,
+      "amp": true,
+      "log_every": 50,
+      "save_every": 500,
+      "pair_count": 10000,
+      "eval_batch": 128,
+      "eval_samples": 256,
+      "trace_samples": 32,
+      "probe_samples": 32,
+      "reference_start": 32,
+      "reference_max": 256,
+      "reference_rtol": 0.01,
+      "nfes": [1, 4, 16, 64]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "steps": 10000,
+  "offset": 20000,
+  "training_seconds": 113.05112436499985,
+  "amp_bf16": true,
+  "parameters": 440449,
+  "ema": "min(configured_decay, (1+global_step)/(10+global_step))"
+}

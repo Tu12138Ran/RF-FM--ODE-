@@ -1,0 +1,80 @@
+{
+  "steps": 512,
+  "nfe": 1024,
+  "doubling_rmse": 0.0004026265814900398,
+  "relative_rmse": 0.0002842671426480516,
+  "converged": true,
+  "tolerance": 0.005,
+  "absolute_tolerance": 0.0001,
+  "threshold": 0.007181834673881531,
+  "check_samples": 256,
+  "cross_check": {
+    "method": "rk4",
+    "steps": 256,
+    "nfe": 1024,
+    "rmse": 0.00013578395009972155,
+    "relative_rmse": 9.586777745638815e-05,
+    "passed": true
+  },
+  "required_consecutive": 2,
+  "history": [
+    {
+      "coarse_steps": 32,
+      "steps": 64,
+      "doubling_rmse": 0.009880691766738892,
+      "relative_rmse": 0.00697626100471659,
+      "threshold": 0.007181652879714966,
+      "sample_rmse_p95": 0.00823785550892353,
+      "sample_rmse_max": 0.07706321030855179,
+      "doubling_passed": false,
+      "consecutive_passes": 0,
+      "cross_check": null
+    },
+    {
+      "coarse_steps": 64,
+      "steps": 128,
+      "doubling_rmse": 0.03128945454955101,
+      "relative_rmse": 0.02209045534411501,
+      "threshold": 0.007182120776176453,
+      "sample_rmse_p95": 0.00999964028596878,
+      "sample_rmse_max": 0.48566707968711853,
+      "doubling_passed": false,
+      "consecutive_passes": 0,
+      "cross_check": null
+    },
+    {
+      "coarse_steps": 128,
+      "steps": 256,
+      "doubling_rmse": 0.0021442496217787266,
+      "relative_rmse": 0.0015139039419112981,
+      "threshold": 0.0071818549394607545,
+      "sample_rmse_p95": 0.002019318053498864,
+      "sample_rmse_max": 0.019149908795952797,
+      "doubling_passed": true,
+      "consecutive_passes": 1,
+      "cross_check": null
+    },
+    {
+      "coarse_steps": 256,
+      "steps": 512,
+      "doubling_rmse": 0.0004026265814900398,
+      "relative_rmse": 0.0002842671426480516,
+      "threshold": 0.007181834673881531,
+      "sample_rmse_p95": 0.00015981732576619834,
+      "sample_rmse_max": 0.004570875782519579,
+      "doubling_passed": true,
+      "consecutive_passes": 2,
+      "cross_check": {
+        "method": "rk4",
+        "steps": 256,
+        "nfe": 1024,
+        "rmse": 0.00013578395009972155,
+        "relative_rmse": 9.586777745638815e-05,
+        "passed": true
+      }
+    }
+  ],
+  "precision": "fp32_no_tf32",
+  "method": "heun",
+  "check_seconds": 1.2550982869997824
+}

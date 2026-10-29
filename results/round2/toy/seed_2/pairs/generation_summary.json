@@ -1,0 +1,87 @@
+{
+  "pair_count": 10000,
+  "teacher_solver": {
+    "steps": 512,
+    "nfe": 1024,
+    "doubling_rmse": 0.0003812145732808858,
+    "relative_rmse": 0.000268682090866981,
+    "converged": true,
+    "tolerance": 0.005,
+    "absolute_tolerance": 0.0001,
+    "threshold": 0.007194156742095947,
+    "check_samples": 256,
+    "cross_check": {
+      "method": "rk4",
+      "steps": 256,
+      "nfe": 1024,
+      "rmse": 0.0001262934529222548,
+      "relative_rmse": 8.901230795539329e-05,
+      "passed": true
+    },
+    "required_consecutive": 2,
+    "history": [
+      {
+        "coarse_steps": 32,
+        "steps": 64,
+        "doubling_rmse": 0.01207982562482357,
+        "relative_rmse": 0.008511855975032161,
+        "threshold": 0.007195882296562196,
+        "sample_rmse_p95": 0.014245457015931606,
+        "sample_rmse_max": 0.1303872913122177,
+        "doubling_passed": false,
+        "consecutive_passes": 0,
+        "cross_check": null
+      },
+      {
+        "coarse_steps": 64,
+        "steps": 128,
+        "doubling_rmse": 0.019000491127371788,
+        "relative_rmse": 0.013391161626515139,
+        "threshold": 0.007194414830207825,
+        "sample_rmse_p95": 0.017861831933259964,
+        "sample_rmse_max": 0.22559483349323273,
+        "doubling_passed": false,
+        "consecutive_passes": 0,
+        "cross_check": null
+      },
+      {
+        "coarse_steps": 128,
+        "steps": 256,
+        "doubling_rmse": 0.0025174887850880623,
+        "relative_rmse": 0.001774306751350439,
+        "threshold": 0.007194288468360901,
+        "sample_rmse_p95": 0.0020298638846725225,
+        "sample_rmse_max": 0.027555128559470177,
+        "doubling_passed": true,
+        "consecutive_passes": 1,
+        "cross_check": null
+      },
+      {
+        "coarse_steps": 256,
+        "steps": 512,
+        "doubling_rmse": 0.0003812145732808858,
+        "relative_rmse": 0.000268682090866981,
+        "threshold": 0.007194156742095947,
+        "sample_rmse_p95": 0.0003000029537361115,
+        "sample_rmse_max": 0.005022380966693163,
+        "doubling_passed": true,
+        "consecutive_passes": 2,
+        "cross_check": {
+          "method": "rk4",
+          "steps": 256,
+          "nfe": 1024,
+          "rmse": 0.0001262934529222548,
+          "relative_rmse": 8.901230795539329e-05,
+          "passed": true
+        }
+      }
+    ],
+    "precision": "fp32_no_tf32",
+    "method": "heun",
+    "check_seconds": 1.2266281840002193
+  },
+  "this_session_seconds": 17.66586513599941,
+  "new_pairs_this_session": 10000,
+  "summed_chunk_generation_seconds": 16.40173254900037,
+  "note": "Session time includes checking/loading; resumed earlier-session time is not included."
+}

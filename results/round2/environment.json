@@ -1,0 +1,13 @@
+{
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.35",
+  "torch": "2.6.0+cu126",
+  "numpy": "1.26.4",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "cudnn": 90501,
+  "cpu_threads": 4,
+  "training_tf32": true,
+  "evaluation_precision": "fp32_no_tf32",
+  "round": 2
+}
